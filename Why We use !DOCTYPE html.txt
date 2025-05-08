@@ -1,0 +1,9 @@
+We use <!DOCTYPE html> at the beginning of an HTML document to tell the web browser which version of HTML the page is written in.
+
+Here's why it's important:
+Standards Mode Activation: It ensures the browser renders the page in standards mode, not in quirks mode (a legacy rendering mode that mimics older, non-standard behavior of old browsers).
+
+HTML5 Declaration: <!DOCTYPE html> is the doctype for HTML5, the current standard. It's short, simple, and tells modern browsers: “This is an HTML5 document.”
+
+Without it:
+Browsers might guess the document type and render the page incorrectly, which can cause inconsistent layouts and bugs across different browsers.

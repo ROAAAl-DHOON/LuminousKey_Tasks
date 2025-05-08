@@ -1,0 +1,8 @@
+The <meta charset="UTF-8"> tag in HTML specifies the character encoding used in the web page. Here's what it does:
+
+✅ Functionality of <meta charset="UTF-8">
+Defines Character Set: It tells the browser to use UTF-8 encoding, which supports virtually all characters in all human languages, including symbols, emojis, and special characters.
+
+Prevents Encoding Issues: Without this tag, browsers might misinterpret non-English characters (like Arabic, Chinese, or accented letters) and display strange symbols (  or  ).
+
+Placed in the <head>: It should be included in the <head> section of your HTML for proper document parsing.
