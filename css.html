@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Topics Demo</title>
+  <style>
+    /* 1. CSS Syntax and Selectors */
+    p {
+      color: red;
+    }
+
+    #myTitle {
+      font-size: 24px;
+    }
+
+    .highlight {
+      background-color: yellow;
+    }
+
+    /* 2. Colors and Units */
+    .color-box {
+      width: 50%;
+      height: 100px;
+      background-color: rgb(0, 123, 255);
+      font-size: 2em;
+      color: white;
+    }
+
+    /* 3. Box Model */
+    .box-model {
+      width: 200px;
+      padding: 20px;
+      border: 5px solid black;
+      margin: 30px;
+      background-color: lightblue;
+    }
+
+    /* 4. Positioning */
+    .fixed-box {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: red;
+      color: white;
+      padding: 10px;
+    }
+
+    .relative-box {
+      position: relative;
+      top: 20px;
+      left: 50px;
+      background-color: lightgreen;
+      padding: 10px;
+    }
+
+    /* 5. Flexbox */
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #ccc;
+      height: 100px;
+    }
+
+    .flex-item {
+      background-color: skyblue;
+      padding: 20px;
+    }
+
+    /* Grid Layout */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 100px 100px;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .grid-item {
+      background-color: lightgreen;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* 6. Typography */
+    .text-style {
+      font-family: "Tahoma", sans-serif;
+      font-size: 18px;
+      text-align: justify;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    /* 7. Backgrounds and Borders */
+    .styled-box {
+      background-color: #ffe0e0;
+      background-image: url('https://tse2.mm.bing.net/th/id/OIP.rYEz9vy1-W1w6KjLGH0IOAHaEK?cb=iwc2&rs=1&pid=ImgDetMain');
+      background-repeat: repeat;
+      background-position: right top;
+
+      border: 3px solid purple;
+      border-radius: 10px;
+
+      padding: 20px;
+      color: #987;
+    }
+     /* 8. Transitions */
+     .transition-box {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      transition: background-color 0.5s ease;
+    }
+
+    .transition-box:hover {
+      background-color: green;
+    }
+
+    /* Animations */
+    @keyframes slide {
+      from { transform: translateX(0); }
+      to { transform: translateX(200px); }
+    }
+
+    .animation-box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation: slide 2s infinite alternate;
+      margin-top: 10px;
+    }
+
+    /* 9. Media Queries */
+    .responsive-box {
+      width: 100%;
+      padding: 20px;
+      background-color: lightgray;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .responsive-box {
+        background-color: pink;
+        font-size: 18px;
+      }
+    }
+
+    /* 10. Pseudo-classes and Pseudo-elements */
+    .pseudo-demo a:hover {
+      color: red;
+    }
+
+    .pseudo-demo p::first-letter {
+      font-size: 200%;
+      color: blue;
+    }
+
+    .pseudo-demo p::before {
+      content: "★ ";
+      color: orange;
+    }
+
+    /* 11. Z-index */
+    .z-index-wrapper {
+      position: relative;
+      height: 150px;
+    }
+
+    .z-box {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+    }
+
+    .z1 {
+      background: blue;
+      left: 30px;
+      top: 30px;
+      z-index: 1;
+    }
+
+    .z2 {
+      background: green;
+      left: 60px;
+      top: 60px;
+      z-index: 2;
+    }
+
+    /* 12. Specificity and Inheritance */
+    .inherit-demo {
+      color: purple;
+      font-family: Arial, sans-serif;
+    }
+
+    #special {
+      color: orange;
+    }
+
+    /* 13. CSS Variables */
+    :root {
+      --main-bg: #f9f9;
+      --primary-color: teal;
+    }
+
+    .var-box {
+      background-color: var(--main-bg);
+      color: var(--primary-color);
+      padding: 15px;
+      border: 1px solid var(--primary-color);
+    }
+
+    /* 14. CSS Functions */
+    .calc-box {
+      width: calc(100% - 40px);
+      padding: 10px;
+      background-color: lightskyblue;
+      margin: 20px;
+    }
+
+    /* 15. Best Practices */
+    /* Use clear names, comments, grouping, and variables (shown above) */
+    .btn-primary {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 id="myTitle">1. CSS Syntax and Selectors</h2>
+  <p>This is a red paragraph.</p>
+  <p class="highlight">This paragraph has a yellow background using class selector.</p>
+
+  <h2>2. Colors and Units</h2>
+  <div class="color-box">This box uses RGB color and font size in em.</div>
+
+  <h2>3. Box Model</h2>
+  <div class="box-model">This box has margin, border, padding, and content.</div>
+
+  <h2>4. Positioning</h2>
+  <div class="fixed-box">Fixed Box</div>
+  <div class="relative-box">Relative Box</div>
+
+  <h2>5. Flexbox</h2>
+  <div class="flex-container">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+  </div>
+
+  <h2>Grid Layout</h2>
+  <div class="grid-container">
+    <div class="grid-item">A</div>
+    <div class="grid-item">B</div>
+    <div class="grid-item">C</div>
+    <div class="grid-item">D</div>
+    <div class="grid-item">E</div>
+    <div class="grid-item">F</div>
+  </div>
+
+  <h2>6. Typography</h2>
+  <p class="text-style">
+    This paragraph uses a custom font (Tahoma), justified alignment, and line spacing for better readability.
+  </p>
+
+  <h2>7. Backgrounds and Borders</h2>
+  <div class="styled-box">
+    This box has a background image, a colored border with rounded corners, and padding.
+  </div>
+  <h2>8. Transitions and Animations</h2>
+  <div class="transition-box"></div>
+  <div class="animation-box"></div>
+
+  <h2>9. Media Queries and Responsive Design</h2>
+  <div class="responsive-box">
+    Resize the browser window to see background color change.
+  </div>
+
+  <h2>10. Pseudo-classes and Pseudo-elements</h2>
+  <div class="pseudo-demo">
+    <a href="#">Hover over this link</a>
+    <p>This paragraph starts with a styled letter and a star.</p>
+  </div>
+
+  <h2>11. Z-index and Stacking Context</h2>
+  <div class="z-index-wrapper">
+    <div class="z-box z1">Box 1</div>
+    <div class="z-box z2">Box 2</div>
+  </div>
+
+  <h2>12. Specificity and Inheritance</h2>
+  <div class="inherit-demo">
+    <p>This text is purple (inherited).</p>
+    <p id="special">This text is orange (ID wins).</p>
+  </div>
+
+  <h2>13. CSS Variables (Custom Properties)</h2>
+  <div class="var-box">
+    This box uses CSS variables for background, border, and text color.
+  </div>
+
+  <h2>14. CSS Functions</h2>
+  <div class="calc-box">
+    This box uses <code>calc()</code> to subtract 40px from 100% width.
+  </div>
+
+  <h2>15. Best Practices</h2>
+  <button class="btn-primary">Click Me</button>
+</body>
+</html>

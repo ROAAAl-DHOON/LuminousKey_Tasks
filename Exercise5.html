@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grill BBQ</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+      height: 400px;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 10px 50px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+      background: red;
+      border-radius: 4px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+    }
+
+    section {
+      padding: 50px;
+      text-align: center;
+    }
+
+    .signature {
+      background-color: #f5a56d;
+    }
+
+    .signature h2 {
+      margin-bottom: 20px;
+    }
+
+    .dishes {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .dish {
+      background: white;
+      padding: 15px;
+      border-radius: 6px;
+      width: 30%;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .dish img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .dish h3 {
+      margin: 15px 0 10px;
+    }
+
+    .we-offer {
+      background-color: #f9f3ef;
+    }
+
+    .we-offer h2 {
+      margin-bottom: 20px;
+    }
+
+    .offers {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .offer {
+      width: 200px;
+      margin: 15px;
+      text-align: center;
+    }
+
+    .offer h4 {
+      margin-top: 10px;
+      color: #e07b39;
+    }
+
+    .offer p {
+      font-size: 14px;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .dishes, .offers {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .dish, .offer {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">🔥 grill</div>
+      <ul>
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li><a href="#">PRICING</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+    <h1>BEST BBQ!</h1>
+    <p>Get The Best Tasty Food</p>
+  </header>
+
+  <section class="signature">
+    <h2>SIGNATURE DISHES</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="dishes">
+      <div class="dish">
+        <img src="https://www.themealdb.com/images/media/meals/58oia61564916529.jpg" alt="Cobb Salad">
+        <h3>Cobb Salad</h3>
+        <p>Fresh salad with bacon, avocado, and chicken breast.</p>
+      </div>
+      <div class="dish">
+        <img src="https://th.bing.com/th/id/OIP.lgequ5X2LWqCB-7VzRsF-AHaE6?cb=iwc2&rs=1&pid=ImgDetMain" alt="Twinkies">
+        <h3>Twinkies</h3>
+        <p>Golden sponge cakes with rich cream filling.</p>
+      </div>
+      <div class="dish">
+        <img src="https://www.themealdb.com/images/media/meals/ursuup1487348423.jpg" alt="Pot Roast">
+        <h3>Pot Roast</h3>
+        <p>Slow-cooked beef roast in savory gravy with veggies.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="we-offer">
+    <h2>WE OFFER</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolore quos nemo praesentium excepturi.</p>
+    <div class="offers">
+      <div class="offer">
+        <img src="https://img.icons8.com/ios-filled/50/000000/coffee.png" alt="Coffee">
+        <h4>Coffee</h4>
+        <p>Delicious aromatic coffee served hot or cold with your meals.</p>
+      </div>
+      <div class="offer">
+        <img src="https://static.vecteezy.com/system/resources/previews/024/275/755/original/black-and-white-cookies-icon-in-flat-style-vector.jpg" alt="Breakfast" style="width: 50px; height: 50px;">
+        
+
+        <h4>Breakfast</h4>
+        <p>Start your day with our hearty, freshly prepared breakfast meals.</p>
+      </div>
+      <div class="offer">
+        <img src="https://img.icons8.com/ios-filled/50/000000/meal.png" alt="Lunch">
+        <h4>Lunch</h4>
+        <p>Enjoy a wide selection of BBQ dishes, salads, and more.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

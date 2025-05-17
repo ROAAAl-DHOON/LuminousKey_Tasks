@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exercise #1</title>
+  <style>
+    body {
+      margin: 0;
+      background: white;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+
+    .bar {
+      height: 20px;
+      background-color: gray;
+      margin: 10px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      justify-items: center;
+    }
+
+    .box {
+      height: 100px;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .lightblue {
+      background-color: lightblue;
+    }
+
+    .yellow {
+      background-color: yellow;
+    }
+
+    .orange {
+      background-color: orange;
+      width: 80px;
+    }
+
+    .wide {
+      grid-column: span 2;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="bar top-bar"></div>
+    <div class="grid">
+      <div class="box blue wide"></div>
+      <div class="box lightblue"></div>
+
+      <div class="box yellow"></div>
+      <div class="box yellow"></div>
+      <div class="box yellow"></div>
+
+      <div class="box lightblue"></div>
+      <div class="box blue wide"></div>
+
+      <div class="box orange"></div>
+      <div class="box orange"></div>
+      <div class="box orange"></div>
+      <div class="box orange"></div>
+    </div>
+    <div class="bar bottom-bar"></div>
+  </div>
+</body>
+</html>

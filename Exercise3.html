@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise #3</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: white;
+      font-family: sans-serif;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gallery">
+    <img src="https://picsum.photos/id/1015/600/400" alt="Image 1">
+    <img src="https://picsum.photos/id/1016/600/400" alt="Image 2">
+    <img src="https://picsum.photos/id/1018/600/400" alt="Image 3">
+    <img src="https://picsum.photos/id/1020/600/400" alt="Image 4">
+    <img src="https://picsum.photos/id/1021/600/400" alt="Image 5">
+    <img src="https://picsum.photos/id/1022/600/400" alt="Image 6">
+    <img src="https://picsum.photos/id/1024/600/400" alt="Image 7">
+    <img src="https://picsum.photos/id/1025/600/400" alt="Image 8">
+  </div>
+
+</body>
+</html>

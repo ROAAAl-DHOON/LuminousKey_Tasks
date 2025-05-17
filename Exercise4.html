@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise #4</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Common button style */
+    .button {
+      width: 100%;
+      display: block;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      margin-bottom: 10px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    /* Different sizes */
+    .large {
+      padding: 20px;
+      font-size: 22px;
+    }
+
+    .medium {
+      padding: 15px;
+      font-size: 20px;
+    }
+
+    .small {
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    /* Button colors */
+    .red {
+      background-color: #d9534f;
+    }
+
+    .orange {
+      background-color: #f0ad4e;
+    }
+
+    .green {
+      background-color: #5cb85c;
+    }
+
+    .gray {
+      background-color: #ccc;
+      color: #333;
+    }
+
+    /* Inline buttons */
+    .inline-buttons {
+      margin-top: 30px;
+    }
+
+    .inline-buttons .button {
+      display: inline-block;
+      width: auto;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Full-width buttons with different heights -->
+  <button class="button red large">Button</button>
+  <button class="button orange medium">Button</button>
+  <button class="button green small">Button</button>
+
+  <!-- Inline buttons -->
+  <div class="inline-buttons">
+    <button class="button red large">Button</button>
+    <button class="button orange medium">Button</button>
+    <button class="button green small">Button</button>
+    <button class="button gray small">Button</button>
+  </div>
+
+</body>
+</html>

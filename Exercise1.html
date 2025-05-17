@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exercise #1</title>
+  <style>
+    body {
+      margin: 0;
+      background: white;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+
+    .bar {
+      height: 20px;
+      background-color: gray;
+      margin: 10px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .orange-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      height: 100px;
+      width: 100%;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .lightblue {
+      background-color: lightblue;
+    }
+
+    .yellow {
+      background-color: #ffff00; /* bright yellow */
+    }
+
+    .orange {
+  background-color: orange;
+  width: 150px; /* Keep larger size — change to 100px if needed */
+  height: 120px; /* Keep larger height — change to 100px if needed */
+  border-radius: 0; /* Remove rounded corners */
+  box-shadow: none; /* Remove glow */
+}
+
+    .wide {
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="bar top-bar"></div>
+
+    <div class="grid">
+      <div class="box blue wide"></div>
+      <div class="box lightblue"></div>
+
+      <div class="box yellow"></div>
+      <div class="box yellow"></div>
+      <div class="box yellow"></div>
+
+      <div class="box lightblue"></div>
+      <div class="box blue wide"></div>
+    </div>
+
+    <div class="orange-row">
+      <div class="box orange"></div>
+      <div class="box orange"></div>
+      <div class="box orange"></div>
+      <div class="box orange"></div>
+    </div>
+
+    <div class="bar bottom-bar"></div>
+  </div>
+</body>
+</html>
